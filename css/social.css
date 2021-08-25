@@ -1,0 +1,43 @@
+.s-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.link-card {
+    border-radius: 20px;
+    width: 28vw;
+    height: 25vw;
+    background-color: #e5e5e5;
+    margin-top: 3vw;
+    margin-left: 4.2vw;
+    display: inline-table;
+}
+.link-card:hover {
+    box-shadow: 0.5vw 0.5vw 1vw #b8b8b8;
+    transition-duration: 0.2s;
+}
+
+.link-card img {
+    margin-left: 8.5vw;
+    margin-top: 2vw;
+    width: auto;
+    height: 7vw;
+}
+.link-card h2 {
+    font-family: monospace;
+    font-weight: 600;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    font-size: 22px;
+    text-align: center;
+    max-width: 17vw;
+}
+.link-card h3 {
+    font-family: monospace;
+    font-weight: 500;
+    margin-left: 1.5vw;
+    text-align: center;
+    font-size: 15px;
+    margin-top: -1vw;
+    width: 24vw;
+}

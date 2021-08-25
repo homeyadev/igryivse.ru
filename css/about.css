@@ -1,0 +1,43 @@
+.left-block {
+    height: 30vw;
+    width: 99.7vw;
+}
+.left-block img {
+    height: 94%;
+    width: auto;
+    left: 3vw;
+    float: left;
+    pointer-events: none;
+    position: relative;
+}
+.left-block h3 {
+    width: 57vw;
+    float: left;
+    margin-left: 3vw;
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin-top: 10vw;
+    text-align: center;
+}
+
+.right-block {
+    height: 30vw;
+    width: 99.7vw;
+}
+.right-block img {
+    height: 94%;
+    width: auto;
+    right: 3vw;
+    float: right;
+    margin-right: 3vw;
+    pointer-events: none;
+}
+.right-block h3 {
+    width: 57vw;
+    float: right;
+    margin-right: 3vw;
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin-top: 10vw;
+    text-align: center;
+}

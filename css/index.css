@@ -1,0 +1,111 @@
+#last-video-txt {
+    margin-top: 4vh;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#last-video-subtxt {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: -3vh;
+}
+
+#yt-video-box {
+    margin-right: 15vw;
+    border-radius: 10px;
+    margin-top: 1%;
+    position: relative;
+    height: 37vw;
+    width: 70vw;
+}
+
+#join-community-txt {
+    color: #fff;
+}
+#join-community-subtxt {
+    margin-top: -2vh;
+    color: #fff;
+}
+
+#ds-img {
+    margin-left: 32.5vw;
+    height: 10vw;
+    margin-top: .5vh;
+    margin-bottom: .5vh;
+    pointer-events: none;
+}
+
+#ds-txt {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -10vw;
+    text-align: center;
+    margin-left: 22vw;
+    color: #fff;
+}
+#ds-subtxt {
+    font-size: 13px;
+    margin-top: -1.5vh;
+    width: 20vw;
+    text-align: center;
+    margin-left: 50.5vw;
+    color: #fff;
+}
+
+#ds-join-btn {
+    width: 20vw;
+    background-color: #edefff;
+    height: 3vw;
+    margin-top: -0vw;
+    border-radius: 20px;
+    border-color: transparent;
+    box-shadow: 0 0 0.5vw #edefff;
+    color: #5865f2;
+    font-weight: 800;
+    font-size: 2vw;
+    text-align: center;
+    font-family: monospace;
+    text-decoration: none;
+}
+#ds-join-btn:hover {
+    background-color: #fff;
+    transition-duration: 0.2s;
+    box-shadow: #fff;
+}
+
+#about-me-txt {
+    width: 31vw;
+    margin-left: 10vw;
+    text-align: center;
+    margin-left: 34.5vw;
+    margin-right: 34.5vw;
+    margin-top: unset;
+}
+
+#about-me-subtxt {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    width: 60vw;
+    margin-top: -2vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.main-txt {
+    font-size: 37px;
+    font-weight: 900;
+    color: #000; 
+    text-align: center;
+}
+.main-subtxt {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000; 
+    text-align: center;
+}
+
+.card-holder {
+    width: 100vw;
+}

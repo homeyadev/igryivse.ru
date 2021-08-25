@@ -1,0 +1,20 @@
+main {
+    padding-top: 1px;
+}
+
+#name {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#text {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 5vw;
+    width: 70vw;
+    margin-left: 15vw;
+    word-break: break-all;
+}

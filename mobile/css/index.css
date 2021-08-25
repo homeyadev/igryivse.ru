@@ -1,0 +1,104 @@
+#last-video-txt {
+    margin-top: 2vh;
+    width: 70%;
+    margin-left: 15%;
+}
+#last-video-subtxt {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: -2vh;
+    font-size: 27px;
+}
+
+#yt-video-box {
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-top: 1%;
+    position: relative;
+    height: 47vw;
+    width: 80vw;
+}
+
+#join-community-txt {
+    color: #fff;
+    width: 90%;
+    margin-left: 5%;
+}
+#join-community-subtxt {
+    margin-top: -1.5vh;
+    width: 90%;
+    margin-left: 5%;
+    color: #fff;
+}
+
+#ds-txt {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 1vw;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+    margin-left: 5%;
+    float: left;
+}
+#ds-subtxt {
+    font-size: 26px;
+    margin-top: -.5vh;
+    width: 50%;
+    text-align: center;
+    margin-left: 5%;
+    color: #fff;
+    font-weight: 500;
+    float: left;
+}
+
+#ds-join-btn {
+    width: 40vw;
+    background-color: #edefff;
+    height: 7vw;
+    margin-top: -15vw;
+    border-radius: 40px;
+    border-color: transparent;
+    box-shadow: 0 0 1vw #edefff;
+    color: #5865f2;
+    font-weight: 800;
+    font-size: 4vw;
+    text-align: center;
+    font-family: monospace;
+    text-decoration: none;
+    position: relative;
+    left: 5%;
+}
+
+#about-me-txt {
+    width: 60vw;
+    margin-left: 20vw;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+#about-me-subtxt {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    width: 80vw;
+    margin-top: -1vh;
+    margin-left: 10vw;
+}
+
+.main-txt {
+    font-size: 55px;
+    font-weight: 900;
+    color: #000; 
+    text-align: center;
+}
+.main-subtxt {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000; 
+    text-align: center;
+}
+
+.card-holder {
+    width: 100vw;
+}

@@ -1,0 +1,15 @@
+.txt {
+    width: 70vw;
+    font-weight: 500;
+    font-size: 2vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    border-bottom: solid 5px #4d4d4d;
+    padding-bottom: 2vh;
+}
+
+main {
+    padding-bottom: 1px;
+}

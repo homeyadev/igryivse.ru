@@ -1,0 +1,18 @@
+RewriteEngine on
+
+RewriteBase /
+
+ErrorDocument 403 /403.php 
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php 
+ErrorDocument 501 /500.php 
+ErrorDocument 502 /500.php 
+ErrorDocument 503 /500.php 
+ErrorDocument 504 /500.php 
+ErrorDocument 505 /500.php 
+
+Options -Indexes
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php
