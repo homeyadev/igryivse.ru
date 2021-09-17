@@ -12,19 +12,23 @@
     }
 
     function getNewsByProjectID(mysqli $conn, int $id) {
-        return $conn->query("SELECT * FROM news WHERE project_id = {$id} ORDER BY id DESC", MYSQLI_STORE_RESULT);
+        return $conn->query("SELECT * FROM news WHERE project_id = {$id} AND type = 0 ORDER BY id DESC", MYSQLI_STORE_RESULT);
+    }
+
+    function getNews(mysqli $conn) {
+        return $conn->query("SELECT * FROM news WHERE type = 0 ORDER BY id DESC", MYSQLI_STORE_RESULT);
     }
 
     function getNewsitem(mysqli $conn, int $id) {
         return $conn->query("SELECT * FROM news WHERE id = {$id}", MYSQLI_STORE_RESULT);
     }
 
-    function getNews(mysqli $conn) {
-        return $conn->query("SELECT * FROM news ORDER BY id DESC", MYSQLI_STORE_RESULT);
+    function getChangelogsByProjectID(mysqli $conn, $id) {
+        return $conn->query("SELECT * FROM news WHERE project_id = {$id} AND type = 1 ORDER BY id DESC", MYSQLI_STORE_RESULT);
     }
 
-    function addNewsitem(mysqli $conn, $project_id, $name, $txt) {
-        return $conn->query("INSERT INTO news (project_id, header, text) VALUES ('{$project_id}', '{$name}', '{$txt}')");
+    function addNewsitem(mysqli $conn, $project_id, $name, $txt, $type = 0) {
+        return $conn->query("INSERT INTO news (project_id, header, text, type) VALUES ('{$project_id}', '{$name}', '{$txt}', {$type})");
     }
 
     function addProject(mysqli $conn, $name, $desc) {
@@ -73,6 +77,22 @@
                 header("HTTP/1.1 401 Unauthorized");
                 return false;
             }
+        }
+    }
+
+    function addUser(mysqli $conn, $ipHash) {
+        return $conn->query("INSERT INTO site_users (hash) VALUES ('{$ipHash}')");
+    }
+
+    function checkUserExists(mysqli $conn, $ipHash) {
+        $result = $conn->query("SELECT COUNT(*) AS count FROM site_users WHERE hash='{$ipHash}'");
+
+        if ($result->fetch_assoc()['count'] == 0) {
+            return false;
+        }
+
+        else {
+            return true;
         }
     }
 

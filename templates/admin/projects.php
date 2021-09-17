@@ -14,7 +14,6 @@
                         background-color: #ffa6a6;
                         border: solid #ff2b2b 2px;
                     }
-                    .action-form #innacessible
                 </style
                 ";
             }
@@ -24,7 +23,7 @@
                 "
                 <style>
                     main {
-                        min-height: 133vh;
+                        min-height: 155vh;
                     }
                 </style
                 ";
@@ -41,7 +40,6 @@
 
                     else {
                         header("HTTP/1.1 400 Bad Request");
-                        echo "dsds";
                     }
 
                 } 
@@ -59,8 +57,11 @@
                 }
 
                 elseif ($_POST['todo'] == "upd") {
-                    if ($_POST['project_id'] != null && $_POST['project_ver'] != null && $_POST['project_stat'] != null) {
+                    if ($_POST['project_id'] != null && $_POST['project_ver'] != null && $_POST['project_stat'] != null && $_POST['changelog'] != null) {
                         updateProject($conn, $_POST['project_id'], $_POST['project_ver'], $_POST['project_stat']);
+                        $changelogHandler = new JSONFuncs;
+                        $json = $changelogHandler->createChangelogJSON($_POST['changelog'], $_POST['project_ver']);
+                        addNewsitem($conn, $_POST['project_id'], ':', $json, 01);
 
                         header("200 Success");
                     }
@@ -153,6 +154,7 @@
                         <option value="1">Идёт бета-тест</option>
                         <option value="2">Вышел в релиз</option>
                     </select>
+                    <textarea name="changelog" class="big-txt-input" placeholder="Создайте changelog" reqired></textarea>
                     <input type="submit" class="send-action" value="Обновить">
                 </form>
 

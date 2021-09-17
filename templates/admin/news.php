@@ -14,7 +14,6 @@
                         background-color: #ffa6a6;
                         border: solid #ff2b2b 2px;
                     }
-                    .action-form #innacessible
                 </style
                 ";
             }
