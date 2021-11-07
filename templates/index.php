@@ -12,8 +12,6 @@
                 <h3 id="last-video-subtxt" class="main-subtxt">на моём Youtube канале</h1>
                 <?php 
                     $channel_id = 'UCnweBe19u5Rn_uLNDHfpOrA';
-                    $link = 'https://youtube.com/';
-                     
                     $xml = simplexml_load_file(sprintf('https://www.youtube.com/feeds/videos.xml?channel_id=%s', $channel_id));
                     $videoId = $xml->entry->children('yt', true)->videoId;
 

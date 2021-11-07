@@ -14,11 +14,11 @@ $links = array(
     "/develop" => "templates/develop.php",
     "/project" => "templates/project.php",
     "/news" => "templates/news.php",
+    "/games" => "templates/games.php",
     "/admin" => "templates/admin.php"
 );
 
 $service_links = array(
-    "/admin" => "templates/admin.php", 
-    "/unsopported" => "templates/error_handlers/unsopported.php"
+    "/admin" => "templates/admin.php"
 );
 ?>

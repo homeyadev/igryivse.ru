@@ -96,6 +96,18 @@
         }
     }
 
+    function getGames(mysqli $conn) {
+        return $conn->query("SELECT * FROM games", MYSQLI_STORE_RESULT);
+    }
+
+    function addGame(mysqli $conn, int $id, int $type) {
+        $conn->query("INSERT INTO games (steam_id, type) VALUES ({$id}, '{$type}')");
+    }
+
+    function setGameStatus(mysqli $conn, int $id) {
+        return $conn->query("UPDATE games SET type = 0 WHERE id = {$id}");
+    }
+
     function dbclose(mysqli $conn) {
         return $conn->close();
     }

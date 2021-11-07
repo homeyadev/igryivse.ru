@@ -3,6 +3,7 @@
         "login" => "admin/login.php",
         "news" => "admin/news.php",
         "projects" => "admin/projects.php",
+        "games" => "admin/games.php",
         "main" => "admin/main.php"
     );
 
